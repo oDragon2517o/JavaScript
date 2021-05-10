@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<script>
+var user = {};
+user.name = "Tom";
+user.age = 26;
+user.display = function(){
+     
+    console.log(user.name);
+    console.log(user.age);
+};
+ 
+console.log(user.name); // Tom
+delete user.name; // удаляем свойство
+// альтернативный вариант
+// delete user["name"];
+console.log(user.name); // undefined
+</script>
+</body>
+</html>

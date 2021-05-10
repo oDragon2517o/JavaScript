@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<script>
+const z = 10;
+function displayZ(){
+  
+    const z = 20;
+     
+    {
+        const z = 30;
+        console.log("Block:", z);   // 30
+    }
+    console.log("Function:", z);    // 20
+}
+ 
+displayZ();
+console.log("Global:", z);  // 10
+</script>
+</body>
+</html>

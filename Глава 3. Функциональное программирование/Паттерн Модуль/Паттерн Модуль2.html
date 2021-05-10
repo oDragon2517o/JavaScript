@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<script>
+let calculator = (function(){
+    let data = { number: 0};
+     
+    return {
+        sum: function(n){
+            data.number += n;
+        },
+        subtract: function(n){
+            data.number -= n;
+        },
+        display: function(){
+            console.log("Result: ", data.number);
+        }
+    }
+})();
+calculator.sum(10);
+calculator.sum(3);
+calculator.display();   // Result: 13
+calculator.subtract(4);
+calculator.display();   // Result: 9
+</script>
+</body>
+</html>

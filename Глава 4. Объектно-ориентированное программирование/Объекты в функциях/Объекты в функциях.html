@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<script>
+function createUser(pName, pAge) {
+    return {
+        name: pName,
+        age: pAge,
+        displayInfo: function() {
+            document.write("Имя: " + this.name + " возраст: " + this.age + "<br/>");
+        }
+    };
+};
+var tom = createUser("Tom", 26);
+tom.displayInfo();
+var alice = createUser("Alice", 24);
+alice.displayInfo();
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<script>
+function getFactorial(n){
+    if (n === 1){
+        return 1;
+    }
+    else{
+         
+        return n * getFactorial(n - 1);
+    }
+}
+var result = getFactorial(4); 
+console.log(result); // 24
+</script>
+</body>
+</html>
