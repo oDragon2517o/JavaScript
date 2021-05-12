@@ -20,12 +20,10 @@ User.prototype.hello = function(){
     document.write(this.name + " говорит: 'Привет!'<br/>");
 };
 User.prototype.maxAge = 110;
- 
 var tom = new User("Том", 26);
-tom.hello();
 var john = new User("Джон", 28);
-john.hello();
-console.log(tom.maxAge); // 110
+tom.maxAge = 99;
+console.log(tom.maxAge); // 99
 console.log(john.maxAge); // 110
 
 

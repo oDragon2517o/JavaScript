@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+<script>
+
+function User(pName, pAge) {
+    this.name = pName;
+    this.age = pAge;
+    this.displayInfo = function(){
+        document.write("Имя: " + this.name + "; возраст: " + this.age);
+    };
+};
+var tom = new User("Том", 26);
+tom.name=34;
+console.log(tom.name);
+
+
+
+</script>
+</body>
+</html>
