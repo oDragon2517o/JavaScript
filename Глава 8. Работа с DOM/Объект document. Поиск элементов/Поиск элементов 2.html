@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        <h3>Заголовок</h3>
+        <p>Первый абзац</p>
+        <p>Второй абзац</p>
+    </div>
+<script>
+ 
+ 
+
+var pElements = document.getElementsByTagName("p");
+document.write(pElements.length+"<br/>");
+
+
+for (var i = 0; i < pElements.length; i++) {
+    document.write("Текст параграфа: " + pElements[i].innerText + "<br/>");
+}
+
+
+/*
+var pElement = document.getElementsByTagName("p")[0];
+document.write("Текст параграфа: " + pElement.innerText);
+*/
+</script>
+</body>
+</html>

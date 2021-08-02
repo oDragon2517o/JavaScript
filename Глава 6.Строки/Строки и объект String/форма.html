@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+<script>
+
+let name = "Tom";
+let hello = `Hello ${name}`;
+console.log(hello);     // Hello Tom
+ 
+let age = 23;
+let info = `${name} is ${age} years old`;
+console.log(info);      // Tom is 23 years old
+
+
+
+let tom ={
+    name: "Tom",
+    age: 25
+}
+let info = `${tom.name} is ${tom.age} years old`;
+console.log(info);  // Tom is 23 years old
+ 
+function sum(x, y){
+    return x + y;
+}
+let a = 5, b = 4;
+let result = `${a} + ${b} = ${sum(a, b)}`;
+console.log(result);    // 5 + 4 = 9
+
+
+
+
+</script>
+</body>
+</html>

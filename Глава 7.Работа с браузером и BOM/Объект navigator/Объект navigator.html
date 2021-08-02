@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+<script>
+
+
+
+document.write(navigator.userAgent);
+
+
+document.write("<br/>");
+
+var browser, uAgent = navigator.userAgent;
+ 
+if(uAgent.indexOf("Chrome") > -1) {
+    browser = "Google Chrome";
+} else if (uAgent.indexOf("Safari") > -1) {
+    browser = "Apple Safari";
+} else if (uAgent.indexOf("Opera") > -1) {
+    browser = "Opera";
+} else if (uAgent.indexOf("Firefox") > -1) {
+    browser = "Mozilla Firefox";
+} else if (uAgent.indexOf("MSIE") > -1) {
+    browser = "Microsoft Internet Explorer";
+}
+document.write(browser);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+<script>
+
+
+var fruit = ["яблоки", "груши", "сливы", "абрикосы", "персики"];
+var fruitString = fruit.join(", ");
+console.log(fruitString);
+
+var numbers = [ 1, -12, 8, -4, 25, 42 ];
+function condition(value, index, array) {
+    var result = false;
+    if (value > 0) {
+        result = true;
+    }
+    return result;
+};
+var passed = numbers.every(condition);
+console.log(passed); // false
+
+var numbers2 = [ 1, -12, 8, -4, 25, 42 ];
+function condition2(value) {
+    var result2 = false;
+    if (value === 8) {
+        result2 = true;
+    }
+    return result2;
+};
+var passed2 = numbers2.some(condition2); // true
+console.log(passed2); // false
+
+</script>
+</body>
+</html>

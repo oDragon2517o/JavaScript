@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>METANIT.COM</title>
+<meta charset="utf-8">
+</head>
+<body>
+ 
+<hello-metanit id="hello"></hello-metanit>
+<script>
+class HelloMetanit extends HTMLElement {
+     
+    constructor() {
+        super();
+         
+        let welcome = "Доброе утро";
+        const hour = new Date().getHours();
+        if (hour > 17) {
+            welcome = "Добрый вечер";
+        } else if (hour > 12) {
+            welcome = "Добрый день";
+        }
+        this.style.cursor="pointer"
+        this.innerText= welcome;
+    }
+    connectedCallback() {
+      this.style.color = "red";
+    }
+    showTime(){
+        console.log(new Date().toTimeString());
+    }
+}
+ 
+customElements.define("hello-metanit", HelloMetanit);
+</script>
+</body>
+</html>

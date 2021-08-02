@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <script src="Декомпозиция.js"></script>
+    <script src="Декомпозиция2.js"></script>
+
+
+<script>
+    //Декомпозиция массивов
+    let users = ["Tom", "Sam", "Bob"];
+let [a, b, c] = users;
+ 
+console.log(a);     // Tom
+console.log(b);     // Sam
+console.log(c);     // Bob
+</script>
+
+<script>
+    let users2 = ["Tom", "Sam", "Bob", "Ann", "Alice", "Kate"];
+let [first,,,,fifth] = users2;
+ 
+console.log(first);     // Tom
+console.log(fifth);     // Alice
+</script>
+
+<script>
+    let users3 = ["Tom", "Sam", "Bob", "Ann", "Alice", "Kate"];
+let [,second,,forth] = users3;
+ 
+console.log(second);        // Sam
+console.log(forth);         // Ann
+</script>
+
+<script>
+    let people = [
+    {name2: "Tom", age: 34},
+    {name2: "Bob", age: 23},
+    {name2: "Sam", age: 32}
+];
+let [,{name2}] = people;
+ 
+console.log(name);      // Bob
+</script>
+
+
+<script>
+    //Декомпозиция параметров
+    function display({name:userName, age:userAge}){
+    console.log(userName, userAge);
+}
+function sum([a, b, c]){
+    var result = a + b + c;
+    console.log(result);
+}
+let user3 = {name3:"Alice", age:33, email: "alice@gmail.com"};
+ 
+ 
+let numbers = [3, 5, 7, 8];
+ 
+display(user3);  // Alice 33
+sum(numbers);   // 15
+</script>
+
+</body>
+</html>
