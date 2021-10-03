@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+    <a href="http://google.com" id="link">Поиск</a>
+    <script>
+    function linkHandler(e){
+         
+        var date = new Date();
+        var hour = date.getHours();
+        console.log(hour);
+        if(hour>12){
+             
+            e.preventDefault();
+            document.write("После 12 переход запрещен");
+        }
+    }
+    var link = document.getElementById("link");
+    link.addEventListener("click", linkHandler);
+    </script>
+</body>
+</html>

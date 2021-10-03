@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<form name="search"></form>
+<form name="settings"></form>
+<script>
+var searchForm;
+for (var i = 0; i < document.forms.length; i++) {
+ 
+    if(document.forms[i].name==="search")
+        searchForm = document.forms[i];
+}
+document.write(searchForm.name);
+</script>
+</body>
+</html>
